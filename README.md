@@ -42,6 +42,7 @@ sudo cp ./sudoers.no_password /etc/sudoers
 
 ##### Command for copy-paste:
 ```
+sudo vim /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade
 sudo reboot
@@ -101,8 +102,9 @@ Install the main utils for life and happiness.
 ./setup_080_opx.sh # only if needed for OPX
 ./setup_012_clang_silversearcher.sh
 ./setup_140_server_repo_tool.sh
-./setup_170_server_python.sh*
-./setup_070_misc.sh*
+./setup_170_server_python.sh
+./setup_070_misc.sh
+./setup_220_ripgrep.sh
 ```
 
 ---
@@ -120,15 +122,24 @@ Configure zsh - update `~/.zshrc` with:
   - Add `source ~/.bashrc.kostaz` after `source $ZSH/oh-my-zsh.sh` line.
   - Set `DISABLE_AUTO_TITLE="true"`.
 
+##### Command for copy-paste:
+```
+vim ~/.zshrc
+```
+
 Configure zsh - update default theme with double `\n\n` and full path:
   - In `~/.oh-my-zsh/themes/robbyrussell.zsh-theme` file replace `%c` with `%d` and add `$'\n'`
   - The end result should like below:
     `PROMPT=$'\n''${ret_status} %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)'$'\n\n'`
 
-Save changes to `~/.oh-my-zsh` back to git:
-  - `cd ~/.oh-my-zsh`
-  - `ga -u`
-  - `gcsm 'WIP'`
+##### Command for copy-paste:
+```
+vim ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
+cd ~/.oh-my-zsh
+ga -u
+gcsm 'WIP'
+cd -
+```
 
 ---
 
