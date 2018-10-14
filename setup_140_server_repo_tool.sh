@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo apt install -y
 
 # Take the timestamp.
 ts=`date +"%Y-%m-%d_%H:%M:%S"`
