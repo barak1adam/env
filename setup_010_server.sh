@@ -102,6 +102,7 @@ sudo apt-get install -y libncurses5:i386 && \
 sudo apt-get install -y libncurses5-dev:i386 && \
 sudo apt-get install -y lib32z1 && \
 sudo apt-get install -y lib32ncurses5 && \
+sudo apt-get install -y meson && \
 sudo rm -f /usr/bin/gmake && \
 sudo ln -s /usr/bin/make /usr/bin/gmake && \
 
