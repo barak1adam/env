@@ -84,8 +84,8 @@ Install git using the command below.
 Update name and email in git configuration file `~/.gitconfig`.
 ```
 [user]
-	name = Kosta Zertsekel
-	email = zertsekel@gmail.com
+	name = Barak Adam
+	email = barak1adam@gmail.com
 ```
 
 ---
@@ -119,7 +119,7 @@ Install zsh (Z Shell).
 ```
 
 Configure zsh - update `~/.zshrc` with:
-  - Add `source ~/.bashrc.kostaz` after `source $ZSH/oh-my-zsh.sh` line.
+  - Add `source ~/.bashrc.baraka` after `source $ZSH/oh-my-zsh.sh` line.
   - Set `DISABLE_AUTO_TITLE="true"`.
 
 ##### Command for copy-paste:

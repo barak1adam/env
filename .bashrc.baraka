@@ -259,3 +259,47 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 export LC_ALL="en_US.UTF-8"
+
+#barak additions:
+function fc
+{
+  #find $PWD \( -name "*.c" \) -print -follow | xargs grep --color=auto --color=always -H -n -e "$0" | sed 's/:/ /g'
+}
+
+function fh
+{
+  find $PWD \( -name "*.h" \) -print -follow  | xargs grep --color=auto --color=always -H -n -e "$1" | sed 's/:/ /g'
+
+}
+
+function fsh
+{
+  find $PWD \( -name "*.sh" \) -o \( -name "*.py" \)  | xargs grep --color=auto --color=always -H -e "$1" | sed 's/:/ /g'
+}
+
+function fas
+{
+  find $PWD \( -name "*.S" \) -print -follow  | xargs grep --color=auto --color=always -H -n -e "$1" | sed 's/:/ /g'
+}
+
+function buildone {
+        ./buildone.sh $1 $2
+}
+function pkginstall {
+        ./pkginstall.sh $1 $2
+}
+
+function setup {
+	./setup.sh $1 $2 $3
+}
+
+
+alias setsource='source config && export SCRIPTS_DIR=$SCRIPTS_DIR'
+alias cdbuild='source $SCRIPTS_DIR/config && cd $BUILD_DIR'
+alias cdscript='source $SCRIPTS_DIR/config && cd $SCRIPTS_DIR'
+alias cddst='source $SCRIPTS_DIR/config && cd $DST_DIR'
+alias cdkern='source $SCRIPTS_DIR/config && cd $KERNEL_DIR'
+alias cdbase='source $SCRIPTS_DIR/config && cd $BASE_DIR'
+alias cdplastic='cd ~/work/plastic/optiswitch/'
+
+

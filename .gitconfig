@@ -1,6 +1,6 @@
 [user]
-	name = Kosta Zertsekel
-	email = zertsekel@gmail.com
+	name = Barak Adam
+	email = barak1adam@gmail.com
 [color]
 	ui = auto
 	diff = auto
@@ -26,10 +26,10 @@
 	smudge = git-lfs smudge -- %f
 	required = true
 [sendemail]
-	from = Kosta Zertsekel <zertsekel@gmail.com>
+	from = Barak Adam <barak1adam@gmail.com>
 	smtpEncryption = tls
 	smtpServer = smtp.gmail.com
-	smtpUser = zertsekel@gmail.com
+	smtpUser = barak1adam@gmail.com
 	chainreplyto = false
 	smtpServerPort = 587
 	confirm = auto
